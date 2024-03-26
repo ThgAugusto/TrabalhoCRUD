@@ -1,9 +1,7 @@
-// models/Pessoa.js
-
 const { DataTypes } = require('sequelize');
-const sequelize = require('../sequelize');
+const sequelize = require('../db');
 
-const Pessoa = sequelize.define('Pessoa', {
+const Usuario = sequelize.define('Pessoas', {
   nome: {
     type: DataTypes.STRING,
     allowNull: false
@@ -35,4 +33,4 @@ const Pessoa = sequelize.define('Pessoa', {
   }
 });
 
-module.exports = Pessoa;
+module.exports = Usuario;
